@@ -19,9 +19,12 @@ public class DbHelper extends SQLiteOpenHelper {
     private static final String KEY_NAME = "name";
     private static final String KEY_NIM = "nim";
 
-    private static final String CREATE_TABLE_STUDENTS = "CREATE TABLE" + TABLE_STD
-            + "(" + KEY_ID + "INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + KEY_NAME + "TEXT," + KEY_NIM + "TEXT);";
+    private static final String CREATE_TABLE_STUDENTS =
+            "CREATE TABLE " + TABLE_STD + " (" +
+                    KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    KEY_NAME + " TEXT, " +
+                    KEY_NIM + " TEXT);";
+
     public DbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }

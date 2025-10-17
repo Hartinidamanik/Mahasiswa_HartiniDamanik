@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mahasiswa_HartiniDamanik"
         tools:targetApi="31">
+        <activity android:name=".UpdateActivity"/>
+        <activity android:name=".ListMahasiswaActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
